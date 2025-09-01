@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahir Mobilya | Ankara | Özel Ölçü Mobilya & İç Dekorasyon</title>
+  <meta name="description" content="Mahir Mobilya: Mutfak dolabı, banyo dolabı, yatak odası, yemek odası, genç odası, çocuk odası ve kapı. Keşif, tasarım, üretim ve montaj tek elde. Siteler/Ankara." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Icons (Remix Icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mahir Mobilya" />
+  <meta property="og:description" content="Özel ölçü üretim ve iç dekorasyon çözümleri." />
+  <meta property="og:image" content="assets/hero-1.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preload" href="assets/hero-1.jpg" as="image" />
+  <link rel="preload" href="assets/hero-2.jpg" as="image" />
+  <link rel="preload" href="assets/hero-3.jpg" as="image" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD (YAYINLAMA SONRASI "example.com" ADRESİNİ GÜNCELLEYİN) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Mahir Mobilya Ankara",
+    "image": ["https://example.com/assets/hero-1.jpg"],
+    "url": "https://example.com/",
+    "logo": "https://example.com/assets/logo.png",
+    "telephone": "+90 505 515 00 15",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Muradiye Caddesi No: 12/14, Siteler",
+      "addressLocality": "Ankara",
+      "addressRegion": "TR"
+    },
+    "openingHours": "Mo-Sa 09:00-19:00"
+  }
+  </script>
+  <!-- İYİLEŞTİRME: Pasif menü linki için stil eklendi -->
+  <style>
+    .nav-link-disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Mahir Mobilya Ana Sayfa">
+        <img src="assets/logo.png" alt="Mahir Mobilya" class="logo" />
+        <span class="brand-text">Mahir Mobilya</span>
+      </a>
+
+      <nav class="nav" aria-label="Ana menü">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Menüyü aç/kapa"><i class="ri-menu-line"></i></button>
+        <ul id="navMenu" class="nav-list">
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li class="has-sub">
+            <a href="#hizmetler">Hizmetler</a>
+            <ul class="sub">
+              <li><a href="mutfak.html">Mutfak Dolabı</a></li>
+              <li><a href="banyo.html">Banyo Dolabı</a></li>
+              <li><a href="yatak-odasi.html">Yatak Odası</a></li>
+              <li><a href="yemek-odasi.html">Yemek Odası</a></li>
+              <li><a href="genc-odasi.html">Genç Odası</a></li>
+              <li><a href="cocuk-odasi.html">Çocuk Odası</a></li>
+              <li><a href="kapi.html">Kapı</a></li>
+            </ul>
+          </li>
+          <li><a href="#vitrin">Vitrin</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+          <!-- İYİLEŞTİRME: Pasif link daha erişilebilir hale getirildi -->
+          <li><a class="nav-link-disabled" title="Bu özellik yakında aktif olacak">Hesap Yap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- İYİLEŞTİRME: Ana içerik <main> etiketi içine alındı -->
+  <main>
+    <!-- HERO: Slider + gradyen, sloganlar slide ile değişir -->
+    <section class="hero" role="banner">
+      <div class="hero-slider" aria-label="Öne çıkan projeler">
+        <div class="slide active"
+             style="--img:url('assets/hero-1.jpg')"
+             data-title="Mutfakta <span class='accent'>Usta Dokunuş</span>"
+             data-desc="Modern mutfak dolaplarında premium malzeme, kusursuz montaj ve şeffaf fiyat.">
+        </div>
+        <div class="slide"
+             style="--img:url('assets/hero-2.jpg')"
+             data-title="Banyoda <span class='accent'>Lüks Zarafet</span>"
+             data-desc="Neme dayanıklı banyo dolapları ve altın ton detaylarla uzun ömürlü şıklık.">
+        </div>
+        <div class="slide"
+             style="--img:url('assets/hero-3.jpg')"
+             data-title="Kapılarda <span class='accent'>Zamansız Şıklık</span>"
+             data-desc="Lake ve laminant kapılarda estetik, dayanıklılık ve sessiz kullanım.">
+        </div>
+
+        <!-- Gradyen overlay + metin kutusu -->
+        <div class="overlay">
+          <div class="container hero-copy">
+            <h1 id="heroTitle">Bir ihtiyaçtan <span class="accent">daha fazlası</span></h1>
+            <p id="heroDesc">Mutfak, banyo, kapı ve oda çözümlerinde estetik ile dayanıklılığı buluşturuyoruz. Keşif, tasarım, üretim ve montaj tek elde.</p>
+            <div class="hero-cta">
+              <a href="#iletisim" class="btn">Teklif Al</a>
+              <a class="btn btn-whatsapp" href="https://wa.me/905055150015?text=Merhaba%2C%20Mahir%20Mobilya%27dan%20bilgi%20ve%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener"><i class="ri-whatsapp-line"></i> WhatsApp</a>
+            </div>
+            <ul class="hero-points">
+              <li>Özel ölçü tasarım</li>
+              <li>Şeffaf fiyatlandırma</li>
+              <li>Zamanında teslim</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slider kontrolleri -->
+        <button class="hero-nav prev" aria-label="Önceki"><i class="ri-arrow-left-s-line"></i></button>
+        <button class="hero-nav next" aria-label="Sonraki"><i class="ri-arrow-right-s-line"></i></button>
+
+        <!-- Yuvarlak noktalar -->
+        <div class="hero-dots" role="tablist" aria-label="Hero slaytları">
+          <button class="dot active" data-index="0" aria-label="1. slayt"></button>
+          <button class="dot" data-index="1" aria-label="2. slayt"></button>
+          <button class="dot" data-index="2" aria-label="3. slayt"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section class="services" id="hizmetler">
+      <div class="container">
+        <header class="section-head">
+          <h2>Hizmetler</h2>
+          <p>Konseptten montaja uçtan uca çözümler.</p>
+        </header>
+
+        <div class="grid-3">
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-mutfak.jpg')">
+            <div class="badge">Mutfak Dolabı</div>
+            <div class="txt">
+              <h3>Modern & Fonksiyonel</h3>
+              <p>Modüler sistemler, kaliteli menteşe/aksesuar.</p>
+            </div>
+          </a>
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-banyo.jpg')">
+            <div class="badge">Banyo Dolabı</div>
+            <div class="txt">
+              <h3>Neme Dayanıklı</h3>
+              <p>Lake, laminant ve kompozit yüzey seçenekleri.</p>
+            </div>
+          </a>
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-yatak.jpg')">
+            <div class="badge">Yatak Odası</div>
+            <div class="txt">
+              <h3>Sessiz & Şık</h3>
+              <p>Raylı dolap, bazalı yatak, akıllı iç düzen.</p>
+            </div>
+          </a>
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-yemek.jpg')">
+            <div class="badge">Yemek Odası</div>
+            <div class="txt">
+              <h3>Estetik Takımlar</h3>
+              <p>Masa, konsol ve vitrin bütünlüğü.</p>
+            </div>
+          </a>
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-genc.jpg')">
+            <div class="badge">Genç Odası</div>
+            <div class="txt">
+              <h3>Akıllı Depolama</h3>
+              <p>Çalışma alanı ve modüler raf/dolaplar.</p>
+            </div>
+          </a>
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-cocuk.jpg')">
+            <div class="badge">Çocuk Odası</div>
+            <div class="txt">
+              <h3>Güvenli & Neşeli</h3>
+              <p>Köşe korumaları, yuvarlatılmış detaylar.</p>
+            </div>
+          </a>
+          <a class="service photo-card" href="#" style="--img:url('assets/svc-kapi.jpg')">
+            <div class="badge">Kapı</div>
+            <div class="txt">
+              <h3>Lake & Laminant</h3>
+              <p>Şık yüzeyler, kaliteli kilit ve menteşe.</p>
+            </div>
+          </a>
+          <article class="service info-card" id="proje-kesif">
+            <div class="ribbon">ÜCRETSİZ</div>
+            <h3>Proje & Keşif</h3>
+            <p>Yerinde ölçülendirme, malzeme/renk danışmanlığı ve net fiyatlandırma ile hızlı planlama.</p>
+            <ul class="bullets">
+              <li>Yerinde keşif randevusu</li>
+              <li>Malzeme/renk seçimi</li>
+              <li>İş planı ve teslim tarihi</li>
+            </ul>
+            <!-- İYİLEŞTİRME: Metin daha açıklayıcı hale getirildi -->
+            <a class="more" href="#">Süreci Detaylı İnceleyin →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VİTRİN -->
+    <section class="showcase" id="vitrin">
+      <div class="container">
+        <header class="section-head">
+          <h2>Vitrin</h2>
+          <p>En çok ilgi gören projelerimizden kareler.</p>
+        </header>
+        <div class="grid-4">
+          <a class="shot" href="#" style="--img:url('assets/gal-1.jpg')"><span>Mutfak</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-2.jpg')"><span>Banyo</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-3.jpg')"><span>Yatak</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-4.jpg')"><span>Kapı</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-5.jpg')"><span>Yemek</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-6.jpg')"><span>Genç</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-7.jpg')"><span>Çocuk</span></a>
+          <a class="shot" href="#" style="--img:url('assets/gal-8.jpg')"><span>Detay</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAKKIMIZDA -->
+    <section class="about" id="hakkimizda" aria-label="Hakkımızda">
+      <div class="about-visual" style="--img:url('assets/about-wide.jpg')">
+        <div class="about-overlay">
+          <div class="container about-copy">
+            <h2>Mahir Mobilya Hakkında</h2>
+            <p><strong>Mahir Mobilya</strong>, Siteler/Ankara’da mutfak ve banyo dolaplarından yatak, genç/çocuk ve yemek odalarına; iç kapı üretiminden keşif ve montaj süreçlerine kadar tüm adımları aynı çatı altında yöneten bir üretim atölyesidir. Ölçünüze özel tasarlanan çözümlerimizde dayanıklı malzemeleri, hassas montajı ve estetik bakış açısını bir araya getiririz. Yerinde keşif ve doğru malzeme seçimi ile alanınızı en verimli şekilde değerlendirir, şeffaf fiyatlandırma ve planlı iş takvimiyle sürprizlerden uzak, zamanında teslim sağlar, satış sonrası destekle uzun ömürlü kullanım sunar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERİ -->
+    <section class="gallery" id="galeri">
+      <div class="container">
+        <header class="section-head">
+          <h2>Galeri</h2>
+          <p>Son işlerden seçmeler.</p>
+        </header>
+        <div class="grid-4 gal-cards">
+          <a class="gal-card" href="#"><img src="assets/gal-1.jpg" alt="Proje 1" loading="lazy"><span>Mutfak</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-2.jpg" alt="Proje 2" loading="lazy"><span>Banyo</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-3.jpg" alt="Proje 3" loading="lazy"><span>Yatak</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-4.jpg" alt="Proje 4" loading="lazy"><span>Kapı</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-5.jpg" alt="Proje 5" loading="lazy"><span>Yemek</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-6.jpg" alt="Proje 6" loading="lazy"><span>Genç</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-7.jpg" alt="Proje 7" loading="lazy"><span>Çocuk</span></a>
+          <a class="gal-card" href="#"><img src="assets/gal-8.jpg" alt="Proje 8" loading="lazy"><span>Detay</span></a>
+        </div>
+        <div class="gal-more">
+          <a class="btn btn-outline" href="#">Tüm Galeriyi Gör →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="contact" id="iletisim">
+      <div class="container two-col contact-grid">
+        <div class="contact-info">
+          <h2>İletişim</h2>
+          <p>İşletme Sahibi: <strong>İsmail SAKA</strong></p>
+
+          <div class="contact-cards">
+            <a class="contact-card" href="tel:+905055150015">
+              <i class="ri-phone-line"></i>
+              <span><strong>Telefon</strong><br/>0505 515 00 15</span>
+            </a>
+            <a class="contact-card" href="mailto:info@mahirmobilya.com">
+              <i class="ri-mail-line"></i>
+              <span><strong>E-posta</strong><br/>info@mahirmobilya.com</span>
+            </a>
+            <a class="contact-card" href="https://wa.me/905055150015?text=Merhaba%2C%20Mahir%20Mobilya%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+              <i class="ri-whatsapp-line"></i>
+              <span><strong>WhatsApp</strong><br/>Hızlı mesaj</span>
+            </a>
+          </div>
+
+          <address class="address">
+            <strong>Adres</strong><br/>
+            Muradiye Caddesi No: 12/14 Siteler/Ankara<br/>
+            <a href="https://maps.google.com/?q=Muradiye%20Caddesi%20No:%2012/14%20Siteler%20Ankara" target="_blank" rel="noopener">Haritada Aç</a>
+          </address>
+        </div>
+
+        <div class="map-wrap">
+          <!-- İYİLEŞTİRME: Harita için başlık eklendi (erişilebilirlik) -->
+          <iframe class="map" title="Mahir Mobilya'nın konumu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Muradiye%20Caddesi%20No:%2012/14%20Siteler%20Ankara&output=embed"></iframe>
+          <div class="route">
+            <a class="btn route-btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&destination=Muradiye%20Caddesi%20No:%2012/14%20Siteler%20Ankara">
+              <i class="ri-map-pin-2-line"></i> Yol Tarifi Al
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-brand">
+        <img src="assets/logo.png" alt="Mahir Mobilya" class="logo-lg"/>
+        <div>
+          <strong class="foot-title">Mahir Mobilya</strong>
+          <p>Özel ölçü mobilya & iç dekorasyon.</p>
+        </div>
+      </div>
+
+      <nav class="foot-links" aria-label="Hızlı Bağlantılar">
+        <a href="#hakkimizda"><i class="ri-information-line"></i> Hakkımızda</a>
+        <a href="#hizmetler"><i class="ri-layout-6-line"></i> Hizmetler</a>
+        <a href="#galeri"><i class="ri-image-line"></i> Galeri</a>
+        <a href="#iletisim"><i class="ri-contacts-line"></i> İletişim</a>
+      </nav>
+
+      <div class="foot-contact">
+        <a href="tel:+905055150015"><i class="ri-phone-line"></i> 0505 515 00 15</a>
+        <a href="mailto:info@mahirmobilya.com"><i class="ri-mail-line"></i> info@mahirmobilya.com</a>
+        <a href="https://wa.me/905055150015" target="_blank" rel="noopener"><i class="ri-whatsapp-line"></i> WhatsApp</a>
+        <span><i class="ri-map-pin-2-line"></i> Muradiye Cd. No:12/14 Siteler/Ankara</span>
+        <p class="copy">© <span id="yil"></span> Mahir Mobilya. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sabit Aksiyon Butonları -->
+  <a class="fab phone" href="tel:+905055150015" aria-label="Ara: 0505 515 00 15">
+    <i class="ri-phone-fill"></i>
+  </a>
+  <a class="fab whatsapp" href="https://wa.me/905055150015?text=Merhaba%2C%20Mahir%20Mobilya%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile yaz">
+    <i class="ri-whatsapp-fill"></i>
+  </a>
+  <!-- İYİLEŞTİRME: İkonla değiştirildi -->
+  <button class="fab to-top" aria-label="Yukarı çık">
+    <i class="ri-arrow-up-s-line"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
